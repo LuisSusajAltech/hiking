@@ -8,7 +8,24 @@ import {
 function Header(){
     return(
         <div className="header">
-
+            <Router>
+                <div className="nav">
+                    <ul>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/"></Link>
+                        </li>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                    </ul>
+                </div>
+            </Router>
         </div>
     )
 }

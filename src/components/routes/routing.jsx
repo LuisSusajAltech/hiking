@@ -5,3 +5,11 @@ import {
   Route,
   Link
 } from "react-router-dom";
+
+function Routing(){
+    return(
+        <Router>
+            <Route></Route>
+        </Router>
+    )
+}
