@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+$headerFooter : #fffcec;
+$topHeaderColor:#ccc;
+$bgColor:#fff;
+$txt-color:#111;
+$width:1280px;
+html{
+    body{
+        background: $bgColor;
+    }
+    &, & body{
+        padding: 0;
+        margin: 0;
+        & * {
+            font-family: "Roboto Condensed";
+        }
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        @import "./header/header.scss";
+    }
+}
