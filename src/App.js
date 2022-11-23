@@ -1,10 +1,19 @@
 import Header from "./components/main/header/header";
-import "./components/main/root.css"
+import Routing from "./components/main/routing/routing";
+import "./assets/styling/root.css"
+import {
+  BrowserRouter as Router,
+  // Switch,
+  Route,
+  Routes,
+  Link
+} from "react-router-dom";
 function App() {
   return (
-    <div className="App">
-      <Header/>
-    </div>
+    <Router>
+       <Header/>
+       <Routing/>
+    </Router>
   );
 }
 

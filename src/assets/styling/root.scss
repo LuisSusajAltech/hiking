@@ -20,6 +20,6 @@ html{
         a{
             text-decoration: none;
         }
-        @import "./header/header.scss";
+        @import "../../components/main/header/header.scss";
     }
 }
