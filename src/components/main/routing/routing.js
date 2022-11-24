@@ -15,7 +15,7 @@ import Error from "../error/error";
 function Routing(){
     return(
         <Routes>
-            {["/", "/hiking", "/home"].map(path=>{return <Route path={path} element={<Home/>}></Route>})}
+            {["/", "/hiking", "/home"].map((path, i)=>{return <Route path={path} element={<Home/>} key={i}></Route>})}
             <Route path="/products" element={<Products/>}></Route>
             <Route path="/locations" element={<Locations/>}></Route>
             <Route path="/aboutus" element={<About/>}></Route>

@@ -66,4 +66,23 @@ html div.header-btm .nav-cont-child-link, html body div.header-btm .nav-cont-chi
   text-transform: uppercase;
   font-size: 18px;
   color: #111;
+}
+html .home, html body .home {
+  margin-top: 10px;
+}
+html .home .slider-cont, html body .home .slider-cont {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+html .home .slider-cont-slide, html body .home .slider-cont-slide {
+  transition: order ease-in-out 0.5s;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+html .home .slider-cont-slide img, html body .home .slider-cont-slide img {
+  border-radius: 8px;
+  width: 1280px;
 }/*# sourceMappingURL=root.css.map */

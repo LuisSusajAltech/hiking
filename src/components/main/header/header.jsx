@@ -10,11 +10,11 @@ function Header(){
         <div className="header-top">
             <div className="header-top-left">
             <div className="header-top-left-phone">
-                <i class="fal fa-phone"></i>  
+                <i className="fal fa-phone"></i>  
                 <span>+355 67 77 77 777</span>
             </div>
             <div className="header-top-left-email">
-                <i class="fal fa-envelope"></i>
+                <i className="fal fa-envelope"></i>
                 <span>info@hiking.al</span>
             </div>
             </div>

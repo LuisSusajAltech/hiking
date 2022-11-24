@@ -1,0 +1,17 @@
+.home{
+    margin-top: 10px;
+    .slider-cont{
+        display: flex;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        &-slide{
+            transition: order ease-in-out 0.5s;
+            height: max-content;
+            img{
+                border-radius: 8px;
+                width: $width;
+            }
+        }
+    }
+}

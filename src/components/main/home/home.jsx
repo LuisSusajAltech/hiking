@@ -1,8 +1,9 @@
-import "./home.css"
+import SliderCreation from "./sliderContainer";
+
 function Home(){
     return(
         <div className="home maxWidth">
-            <h1>Home</h1>
+            <SliderCreation />
         </div>
     )
 }
