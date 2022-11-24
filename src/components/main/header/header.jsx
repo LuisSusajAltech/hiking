@@ -1,17 +1,26 @@
-import {
-    //BrowserRouter as Router,
-    // Switch,
-    // Route,
-    // Routes,
-    Link
-  } from "react-router-dom";
-import images from "../../../assets/images/images"
 import React from "react";
+import {Link} from "react-router-dom";
+import images from "../../../assets/images/images"
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope} from '@fortawesome/free-solid-svg-icons'
+// import {faPhone} from '@fortawesome/pro-light-svg-icons'
 function Header(){
     return(
     <div className="header">
         <div className="header-top">
-
+            <div className="header-top-left">
+            <div className="header-top-left-phone">
+                <i class="fal fa-phone"></i>  
+                <span>+355 67 77 77 777</span>
+            </div>
+            <div className="header-top-left-email">
+                <i class="fal fa-envelope"></i>
+                <span>info@hiking.al</span>
+            </div>
+            </div>
+            <div className="header-top-right">
+                <Link to="/login" className="header-top-right-submit">Login</Link>
+            </div>
         </div>
         <div className="header-btm">
             <div className="header-btm-logo">

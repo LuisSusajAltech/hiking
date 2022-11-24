@@ -15,16 +15,41 @@ html li, html body li {
 html a, html body a {
   text-decoration: none;
 }
+html .maxWidth, html body .maxWidth {
+  max-width: 1280px;
+  display: flex;
+  margin: 0 auto;
+}
 html div.header, html body div.header {
   background: #fffcec;
-  box-shadow: 1px 18px 20px -22px #ccc;
+  box-shadow: 1px 18px 20px -22px #1a1a1a;
+}
+html div.header-top, html body div.header-top {
+  padding: 0 calc((100% - 1280px) / 2);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1a1a1a;
+  height: 34px;
+}
+html div.header-top *, html body div.header-top * {
+  color: #fff;
+}
+html div.header-top i, html body div.header-top i {
+  margin-right: 10px;
+}
+html div.header-top-left, html body div.header-top-left {
+  display: flex;
+}
+html div.header-top-left-phone, html body div.header-top-left-phone {
+  margin-right: 20px;
 }
 html div.header-btm, html body div.header-btm {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 calc((100% - 1280px) / 2);
-  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #1a1a1a;
 }
 html div.header-btm-logo, html div.header-btm-logo img, html body div.header-btm-logo, html body div.header-btm-logo img {
   height: 80px;
@@ -32,9 +57,9 @@ html div.header-btm-logo, html div.header-btm-logo img, html body div.header-btm
 html div.header-btm .nav-cont, html body div.header-btm .nav-cont {
   display: flex;
   padding: 0;
-  margin: 0;
+  margin: 0 10px 0 0;
 }
-html div.header-btm .nav-cont-child, html body div.header-btm .nav-cont-child {
+html div.header-btm .nav-cont-child:not(:last-child), html body div.header-btm .nav-cont-child:not(:last-child) {
   margin-right: 30px;
 }
 html div.header-btm .nav-cont-child-link, html body div.header-btm .nav-cont-child-link {

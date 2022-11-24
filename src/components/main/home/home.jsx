@@ -1,7 +1,7 @@
 import "./home.css"
 function Home(){
     return(
-        <div className="home">
+        <div className="home maxWidth">
             <h1>Home</h1>
         </div>
     )

@@ -10,15 +10,17 @@ import Products from "../products/products";
 import Locations from "../locations/locations";
 import About from "../aboutus/aboutus";
 import Contact from "../contact/contact";
+import Login from "../login/login";
 import Error from "../error/error";
 function Routing(){
     return(
         <Routes>
-            <Route path="/" element={<Home/>}></Route>
+            {["/", "/hiking", "/home"].map(path=>{return <Route path={path} element={<Home/>}></Route>})}
             <Route path="/products" element={<Products/>}></Route>
             <Route path="/locations" element={<Locations/>}></Route>
             <Route path="/aboutus" element={<About/>}></Route>
             <Route path="/contact" element={<Contact/>}></Route>
+            <Route path="/login" element={<Login/>}></Route>
             <Route path="*" element={<Error/>}></Route>
         </Routes>
     )

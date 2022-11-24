@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
 $headerFooter : #fffcec;
-$topHeaderColor:#ccc;
+$topHeaderColor:#1a1a1a;
 $bgColor:#fff;
 $txt-color:#111;
+$txt-color2:#fff;
 $width:1280px;
 html{
     body{
@@ -19,6 +20,11 @@ html{
         }
         a{
             text-decoration: none;
+        }
+        .maxWidth{
+            max-width: $width;
+            display: flex;
+            margin: 0 auto;
         }
         @import "../../components/main/header/header.scss";
     }

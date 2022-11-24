@@ -2,6 +2,26 @@ div{
     &.header{
         background: $headerFooter;
         box-shadow: 1px 18px 20px -22px $topHeaderColor;
+        &-top{
+            padding: 0 calc((100% - $width)/2);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: $topHeaderColor;
+            height: 34px;
+            & *{
+                color: $txt-color2;
+            }
+            i{
+                margin-right: 10px;
+            }
+            &-left{
+                display: flex;
+                &-phone{
+                    margin-right: 20px;
+                }
+            }
+        }
         &-btm{
             display: flex;
             align-items: center;
@@ -17,9 +37,11 @@ div{
                 &-cont{
                     display: flex;
                     padding: 0;
-                    margin: 0;
+                    margin: 0 10px 0 0;
                     &-child{
-                        margin-right: 30px;
+                        &:not(:last-child){
+                            margin-right: 30px;
+                        }
                         &-link{
                             text-transform: uppercase;
                             font-size: 18px;
